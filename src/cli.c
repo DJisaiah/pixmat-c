@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "logo_asset.h"
+
 typedef enum {
     STATE_EXIT,
     STATE_NO_IMAGE_LOADED,
@@ -6,7 +9,7 @@ typedef enum {
 } MenuState;
 
 void greeter() {
-// do this next. make header and test in main
+    fwrite(assets_logo_txt, 1, assets_logo_txt_len, stdout);
 }
 
 void menu_loop(MenuState ms) {

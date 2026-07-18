@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# development related ignores
+compile_flags.txt
+include/logo_asset.h
+/bin
